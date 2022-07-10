@@ -5,8 +5,13 @@
 // [1] Input(입력)
 var scores = [100, 75, 50, 37, 90, 95];
 var sum = 0;
-var N = scores.length;
+
 // [2] Process(처리)
-for (i = 0; i < scores.length; i++) {}
+for (i = 0; i < scores.length; i++) {
+  if (scores[i] >= 80) {
+    sum = sum + scores[i];
+  }
+}
 
 // [3] Output(출력)
+console.log(sum);
